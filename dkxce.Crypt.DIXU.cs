@@ -161,7 +161,7 @@ namespace dkxce.Crypt
             };
 
             return res;
-        }
+        }        
 
         /// <summary>
         ///     Decrypt data (specified initial key)
@@ -344,8 +344,8 @@ namespace dkxce.Crypt
             int read = 0;
             while ((read = fs.Read(buff, 0, buff.Length)) > 0)
             {                
-                byte[] newbuff = DIXU.Encrypt(buff, key);
-                fs.Position = fs.Position - read;
+                byte[] newbuff = DIXU.Encrypt(buff, 0, read, shift, key);
+                fs.Position -= read;
                 fs.Write(newbuff, 0, newbuff.Length);
             };
             fs.Close();
@@ -359,7 +359,7 @@ namespace dkxce.Crypt
             int read = 0;
             while ((read = sf.Read(buff, 0, buff.Length)) > 0)
             {
-                byte[] newbuff = DIXU.Encrypt(buff, key);
+                byte[] newbuff = DIXU.Encrypt(buff, 0, read, shift, key);
                 df.Write(newbuff, 0, newbuff.Length);
             };
             df.Close();
@@ -373,8 +373,8 @@ namespace dkxce.Crypt
             int read = 0;
             while ((read = fs.Read(buff, 0, buff.Length)) > 0)
             {
-                byte[] newbuff = DIXU.Decrypt(buff, key);
-                fs.Position = fs.Position - read;
+                byte[] newbuff = DIXU.Decrypt(buff, 0, read, shift, key);
+                fs.Position -= read;
                 fs.Write(newbuff, 0, newbuff.Length);
             };
             fs.Close();
@@ -388,7 +388,7 @@ namespace dkxce.Crypt
             int read = 0;
             while ((read = sf.Read(buff, 0, buff.Length)) > 0)
             {
-                byte[] newbuff = DIXU.Decrypt(buff, key);
+                byte[] newbuff = DIXU.Decrypt(buff, 0, read, shift, key);
                 df.Write(newbuff, 0, newbuff.Length);
             };
             df.Close();

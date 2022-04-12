@@ -1,0 +1,8 @@
+C:\Downloads\CD-REC\TEMORV\DIXU\bin\Debug\DIXU.exe
+C:\Downloads\CD-REC\TEMORV\DIXU\bin\Debug\DIXU.pdb
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\ResolveAssemblyReference.cache
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\DIXU.DIXUForm.resources
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\DIXU.Properties.Resources.resources
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\DIXU.csproj.GenerateResource.Cache
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\DIXU.exe
+C:\Downloads\CD-REC\TEMORV\DIXU\obj\Debug\DIXU.pdb
