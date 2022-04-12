@@ -1,6 +1,6 @@
 # DIXU
 
-dkxce opensource free symmetric crypt algorythm (UTF8, ASCII, Win-1251)
+**dixu** v0.1 - dkxce opensource free symmetric crypt algorythm (UTF8, ASCII, Win-1251)
 
 Algorythm:
  
