@@ -13,3 +13,5 @@ Algorythm:
           
        for (j = 0; j < shared_key.Length; j++)
           op = (op << (j % 7 + 1)) ^ shared_key[j];
+
+<img src="window.png"/>
