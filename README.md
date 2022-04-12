@@ -4,7 +4,7 @@
 
 [Скачать exe'шник можно здесь](https://github.com/dkxce/DIXU/releases/tag/dixuv0.1) - Windows XP SP3 и выше
 
-Algorythm:
+[Algorythm](dkxce.Crypt.DIXU.cs):
  
    Crypt:  
    
