@@ -8,7 +8,7 @@ Algorythm:
    
        // op - byte to crypt
        // initial_key = 512-bit (64 bytes) initial key
-       // shared_key  = any-length shared key
+       // shared_key  = nonzero-length shared key
        
        for (j = 0; j < initial_key.Length; j++)
           op = (op << (initial_key[j] & 0x07)) ^ initial_key[j];
@@ -20,7 +20,7 @@ Algorythm:
    
        // op - byte to crypt
        // initial_key = 512-bit (64 bytes) initial key
-       // shared_key  = any-length shared key
+       // shared_key  = nonzero-length shared key
        
        for (j = shared_key.Length - 1; j >= 0; j--)
           op = (op ^ shared_key[j]) >> (j % 7 + 1);
