@@ -4,6 +4,8 @@
 
 Algorythm:
  
+   Crypt:  
+   
        // op - byte to crypt
        // initial_key = 512-bit (64 bytes) initial key
        // shared_key  = any-length shared key
@@ -13,5 +15,18 @@ Algorythm:
           
        for (j = 0; j < shared_key.Length; j++)
           op = (op << (j % 7 + 1)) ^ shared_key[j];
+          
+   Decrypt:    
+   
+       // op - byte to crypt
+       // initial_key = 512-bit (64 bytes) initial key
+       // shared_key  = any-length shared key
+       
+       for (j = shared_key.Length - 1; j >= 0; j--)
+          op = (op ^ shared_key[j]) >> (j % 7 + 1);
+          
+       for (j = initial_key.Length - 1; j >= 0; j--)
+          op = (op ^ initial_key[j]) >> (initial_key[j] & 0x07);
+   
 
 <img src="window.png"/>
