@@ -2,6 +2,8 @@
 
 **dixu** v0.1 - dkxce opensource free symmetric crypt algorythm (UTF8, ASCII, Win-1251)
 
+[Скачать exe'шник можно здесь](https://github.com/dkxce/DIXU/releases/tag/dixuv0.1) - Windows XP SP3 и выше
+
 Algorythm:
  
    Crypt:  
