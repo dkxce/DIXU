@@ -32,6 +32,7 @@
        for (j = initial_key.Length - 1; j >= 0; j--)
           op = (op ^ initial_key[j]) >> (initial_key[j] & 0x07);
    
+[Archive File Format .dxa](https://github.com/dkxce/DIXU/blob/main/DIXUForm.cs#L576)   
 
 <img src="window.png"/>    
 <img src="wcoded.png"/>    
