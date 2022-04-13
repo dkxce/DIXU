@@ -2,6 +2,8 @@
 
 **dixu** v0.1 - dkxce simple opensource free symmetric crypt algorythm (UTF8, ASCII, Win-1251)
 
+**dixu** - легковесная (один единственный exe'шник 408КБ, или архив 48КБ), простая и бесплатная с открытым исходным кодом программа для шифрования и дешифрования текста и любых файлов с возможностью объединять исходные файлы в однофайловый архив.
+
 **[Скачать exe'шник можно здесь](https://github.com/dkxce/DIXU/releases/tag/dixuv0.1)** - Windows XP SP3 и выше
 
 **[Algorythm](dkxce.Crypt.DIXU.cs)**:
