@@ -666,7 +666,7 @@ namespace DIXU
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     string path = XMLState.GetCurrentDir();
-                    if (InputBox.QueryDirectoryBox("Путь для раскодированных файлов", "Выберите папку:", ref path) != DialogResult.OK) return;
+                    if (InputBox.QueryDirectoryBox("Путь для разкодированных файлов", "Выберите папку:", ref path) != DialogResult.OK) return;
                     if (!Directory.Exists(path)) return;
                     DecodeZip(ofd.FileName, path);
                 };

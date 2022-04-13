@@ -267,7 +267,7 @@ namespace DIXU
             // 
             this.decToolStripMenuItem.Name = "decToolStripMenuItem";
             this.decToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
-            this.decToolStripMenuItem.Text = "Раскодировать";
+            this.decToolStripMenuItem.Text = "Разкодировать";
             this.decToolStripMenuItem.Click += new System.EventHandler(this.decToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
@@ -289,7 +289,7 @@ namespace DIXU
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 22);
             this.button2.TabIndex = 6;
-            this.button2.Text = "Раскодировать";
+            this.button2.Text = "Разкодировать";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -479,7 +479,7 @@ namespace DIXU
             this.label4.Size = new System.Drawing.Size(621, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Передайте номер базового ключа, текст и передаваемый произвольный ключ собеседник" +
-                "у для раскодирования текста";
+                "у для разкодирования текста";
             // 
             // label3
             // 
@@ -532,7 +532,7 @@ namespace DIXU
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(225, 22);
             this.button7.TabIndex = 15;
-            this.button7.Text = "Раскодировать и сохранить в новый...";
+            this.button7.Text = "Разкодировать и сохранить в новый...";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -554,7 +554,7 @@ namespace DIXU
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(95, 22);
             this.button5.TabIndex = 13;
-            this.button5.Text = "Раскодировать";
+            this.button5.Text = "Разкодировать";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -629,7 +629,7 @@ namespace DIXU
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(95, 22);
             this.button11.TabIndex = 18;
-            this.button11.Text = "Раскодировать";
+            this.button11.Text = "Разкодировать";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -651,7 +651,7 @@ namespace DIXU
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(225, 22);
             this.button13.TabIndex = 20;
-            this.button13.Text = "Раскодировать с подкаталогами ...";
+            this.button13.Text = "Разкодировать с подкаталогами ...";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -696,7 +696,7 @@ namespace DIXU
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(126, 22);
             this.button14.TabIndex = 25;
-            this.button14.Text = "Раскодировать файл";
+            this.button14.Text = "Разкодировать файл";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
