@@ -6,6 +6,10 @@
 
 **[Скачать exe'шник можно здесь](https://github.com/dkxce/DIXU/releases/tag/dixuv0.1)** - Windows XP SP3 и выше
 
+<img src="window.png"/>    
+<img src="wcoded.png"/>    
+
+
 **[Algorythm](dkxce.Crypt.DIXU.cs)**:
  
    **Crypt**:  
@@ -43,5 +47,4 @@
            NEXT m Bytes - File Data (Encoded)
        END
 
-<img src="window.png"/>    
-<img src="wcoded.png"/>    
+<img src="archive.png"/>
