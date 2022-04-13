@@ -53,6 +53,7 @@ namespace DIXU
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.onFly = new System.Windows.Forms.CheckBox();
             this.button9 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ааToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,21 +64,36 @@ namespace DIXU
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.sharedKey = new System.Windows.Forms.ComboBox();
             this.baseKey = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.onFly = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.stLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -90,6 +106,7 @@ namespace DIXU
             this.panel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,7 +159,6 @@ namespace DIXU
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -320,6 +336,17 @@ namespace DIXU
             this.panel3.Size = new System.Drawing.Size(748, 24);
             this.panel3.TabIndex = 1;
             // 
+            // onFly
+            // 
+            this.onFly.AutoSize = true;
+            this.onFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.onFly.Location = new System.Drawing.Point(609, 3);
+            this.onFly.Name = "onFly";
+            this.onFly.Size = new System.Drawing.Size(122, 17);
+            this.onFly.TabIndex = 14;
+            this.onFly.Text = "кодировать на лету";
+            this.onFly.UseVisualStyleBackColor = true;
+            // 
             // button9
             // 
             this.button9.ContextMenuStrip = this.contextMenuStrip1;
@@ -411,6 +438,18 @@ namespace DIXU
             this.panel2.Size = new System.Drawing.Size(748, 77);
             this.panel2.TabIndex = 0;
             // 
+            // button3
+            // 
+            this.button3.ContextMenuStrip = this.contextMenuStrip1;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(671, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(60, 43);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Новый \r\nключ";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // sharedKey
             // 
             this.sharedKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -462,6 +501,18 @@ namespace DIXU
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button16);
+            this.tabPage2.Controls.Add(this.button17);
+            this.tabPage2.Controls.Add(this.button14);
+            this.tabPage2.Controls.Add(this.button15);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.statusStrip1);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.button11);
+            this.tabPage2.Controls.Add(this.button8);
+            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.button5);
@@ -474,66 +525,10 @@ namespace DIXU
             this.tabPage2.Text = "Файлы";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // onFly
-            // 
-            this.onFly.AutoSize = true;
-            this.onFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.onFly.Location = new System.Drawing.Point(609, 3);
-            this.onFly.Name = "onFly";
-            this.onFly.Size = new System.Drawing.Size(122, 17);
-            this.onFly.TabIndex = 14;
-            this.onFly.Text = "кодировать на лету";
-            this.onFly.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.ContextMenuStrip = this.contextMenuStrip1;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(671, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 43);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Новый \r\nключ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(6, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 22);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Закодировать";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(6, 36);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 22);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Раскодировать";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(107, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(225, 22);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "Закодировать и сохранить в новый...";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(107, 36);
+            this.button7.Location = new System.Drawing.Point(107, 68);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(225, 22);
             this.button7.TabIndex = 15;
@@ -541,8 +536,44 @@ namespace DIXU
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(107, 38);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(225, 22);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "Закодировать и сохранить в новый...";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(6, 68);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 22);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "Раскодировать";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(6, 38);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 22);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Закодировать";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -553,15 +584,6 @@ namespace DIXU
             this.tabPage3.Text = "О программе";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Автор: milokz@gmail.com";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -571,17 +593,185 @@ namespace DIXU
             this.label9.TabIndex = 1;
             this.label9.Text = "https://github.com/dkxce/DIXU";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Автор: milokz@gmail.com";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 107);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 13);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Папки:";
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(6, 134);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(95, 22);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Закодировать";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(6, 162);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(95, 22);
+            this.button11.TabIndex = 18;
+            this.button11.Text = "Раскодировать";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(107, 134);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(225, 22);
+            this.button12.TabIndex = 19;
+            this.button12.Text = "Закодировать с подкаталогами ...";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(107, 162);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(225, 22);
+            this.button13.TabIndex = 20;
+            this.button13.Text = "Раскодировать с подкаталогами ...";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 13);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Файлы:";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(3, 414);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(748, 22);
+            this.statusStrip1.TabIndex = 22;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // stLabel
+            // 
+            this.stLabel.Name = "stLabel";
+            this.stLabel.Size = new System.Drawing.Size(11, 17);
+            this.stLabel.Text = "-";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 202);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Архив:";
+            // 
+            // button14
+            // 
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(6, 259);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(126, 22);
+            this.button14.TabIndex = 25;
+            this.button14.Text = "Раскодировать файл";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(6, 229);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(126, 22);
+            this.button15.TabIndex = 24;
+            this.button15.Text = "Закодировать файлы";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button17
+            // 
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(138, 229);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(194, 22);
+            this.button17.TabIndex = 26;
+            this.button17.Text = "Закодировать с подкаталогами ...";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(138, 259);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(194, 22);
+            this.button16.TabIndex = 27;
+            this.button16.Text = "Информация о файле ...";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(17, 85);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(243, 299);
+            this.label13.TabIndex = 2;
+            this.label13.Text = resources.GetString("label13.Text");
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(17, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Алгоритм:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(290, 12);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(444, 13);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "dixu v0.1 - dkxce simple opensource free symmetric crypt algorythm (UTF8, ASCII, " +
+                "Win-1251)";
+            // 
             // DIXUForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 496);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DIXUForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FIXU - Кодирование и декодирование v0.1";
+            this.Text = "DIXU - Кодирование и декодирование v0.1";
             this.Load += new System.EventHandler(this.DIXUForm_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DIXUForm_FormClosed);
             this.panel1.ResumeLayout(false);
@@ -601,8 +791,11 @@ namespace DIXU
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -657,6 +850,22 @@ namespace DIXU
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel stLabel;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
     }
 }
 
