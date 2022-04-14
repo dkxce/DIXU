@@ -11,7 +11,7 @@
 <img src="shellpopup.png"/>    
 
 
-**[Algorythm](dkxce.Crypt.DIXU.cs)**:
+**DIXU [Algorythm](dkxce.Crypt.DIXU.cs)**:
  
    **Crypt**:  
    
@@ -37,7 +37,7 @@
        for (j = initial_key.Length - 1; j >= 0; j--)
           op = (op ^ initial_key[j]) >> (initial_key[j] & 0x07);
    
-**[Archive File Format .dxa](https://github.com/dkxce/DIXU/blob/main/DIXUForm.cs#L576)**:    
+**DIXU [Archive File Format .dxa](https://github.com/dkxce/DIXU/blob/main/DIXUForm.cs#L576)**:    
 
        00..15 Bytes - File Header "DIXU_ARCHIVE\0\0\r\n" (ASCII)
        NEXT 8 Bytes - File Records Counts (Int64)
